@@ -3,4 +3,5 @@
 <p>Folder list:</p>
 <ol>
   <li>Random generator</li>
+  <li>Syntax basic learn</li>
 </ol>
