@@ -5,4 +5,5 @@
   <li>Random generator</li>
   <li>Syntax basic learn</li>
   <li>dotenv package</li>
+  <li>asyncio package</li>
 </ol>

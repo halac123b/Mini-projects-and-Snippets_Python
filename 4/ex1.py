@@ -1,18 +1,22 @@
 #!/usr/bin/env python3
-# countasync.py
 
 import asyncio
+import time
 
+
+# Hàm async, chứa code chạy bất đồng bộ, hay 1 coroutine
 async def count():
     print("One")
+    # Khi gọi await, code này trả lại quyền điều khiển cho event loop, và chuyển sang chạy code khác
     await asyncio.sleep(1)
     print("Two")
+
 
 async def main():
     await asyncio.gather(count(), count(), count())
 
+
 if __name__ == "__main__":
-    import time
     s = time.perf_counter()
     asyncio.run(main())
     elapsed = time.perf_counter() - s
