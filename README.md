@@ -6,4 +6,5 @@
   <li>Syntax basic learn</li>
   <li>dotenv package</li>
   <li>asyncio package</li>
+  <li>requests package</li>
 </ol>
