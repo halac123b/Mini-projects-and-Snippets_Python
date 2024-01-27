@@ -31,3 +31,16 @@ def greet(func):
 # Gọi hàm với 2 tham số hàm khác nhau
 greet(shout)
 greet(whisper)
+
+
+#### Sample 3: Return 1 hàm dưới dạng 1 hàm khác ####
+def create_adder(x):
+    def adder(y):
+        return x + y
+
+    return adder
+
+
+add_15 = create_adder(15)
+
+print(add_15(10))
