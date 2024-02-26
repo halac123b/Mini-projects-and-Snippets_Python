@@ -7,4 +7,5 @@
   <li>dotenv package</li>
   <li>asyncio package</li>
   <li>requests package</li>
+  <li>pathlib package</li>
 </ol>
