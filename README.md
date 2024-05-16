@@ -8,4 +8,5 @@
   <li>asyncio package</li>
   <li>requests package</li>
   <li>pathlib package</li>
+  <li>scikit-image package</li>
 </ol>
