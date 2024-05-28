@@ -9,4 +9,5 @@
   <li>requests package</li>
   <li>pathlib package</li>
   <li>scikit-image package</li>
+  <li>Pillow (Python Imaging Library) package</li>
 </ol>
