@@ -11,4 +11,5 @@
   <li>scikit-image package</li>
   <li>Pillow (Python Imaging Library) package</li>
   <li>Interact with Redis database</li>
+  <li>os package</li>
 </ol>
