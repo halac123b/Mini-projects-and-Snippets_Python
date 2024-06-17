@@ -13,3 +13,4 @@ Folder list:
 9. Interact with **Redis** database
 10. **os** package
 11. **time** package
+12. **hashlib** package
