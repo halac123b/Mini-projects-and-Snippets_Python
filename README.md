@@ -14,3 +14,4 @@ Folder list:
 10. **os** package
 11. **time** package
 12. **hashlib** package
+13. **platform** package
