@@ -16,3 +16,4 @@ Folder list:
 12. **hashlib** package
 13. **platform** package
 14. **setuptools** package
+15. **sentence_transformers** package
