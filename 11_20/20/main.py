@@ -12,3 +12,4 @@ logging.basicConfig(
 )
 # Log thông tin ở level INFO
 logging.info("This is an INFO log")
+logging.debug("This is a DEBUG msg")
