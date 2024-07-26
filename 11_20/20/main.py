@@ -13,3 +13,9 @@ logging.basicConfig(
 # Log thông tin ở level INFO
 logging.info("This is an INFO log")
 logging.debug("This is a DEBUG msg")
+
+# getLogger(): trong chương trình có thể chứa nhiều logger, hàm này giúp get 1 logger theo tên
+## Nếu k pass tên, return root logger
+# setLevel(): level của các log đc in ra console
+## Có các level từ thấp > cao: info → debug
+logging.getLogger().setLevel(logging.DEBUG)
