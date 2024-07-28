@@ -8,3 +8,6 @@ os.environ["some_env_var"] = "value"
 
 # str: Lấy ra path đến folder chứa file từ path đến file đó
 print(os.path.dirname("folder/file.txt"))
+
+# Bool, check xem path đó có tồn tại k
+print(os.path.exists("path1/path2"))
