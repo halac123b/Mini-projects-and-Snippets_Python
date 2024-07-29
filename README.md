@@ -25,3 +25,4 @@ Folder list:
 21. **concurrent** package
 22. **distro** package
 23. **subprocess** package
+24. **queue** package
