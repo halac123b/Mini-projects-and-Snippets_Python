@@ -26,3 +26,5 @@ Folder list:
 22. **distro** package
 23. **subprocess** package
 24. **queue** package
+25. **multiprocessing** package
+26. **gc** package - garbage collection
