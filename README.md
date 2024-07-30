@@ -28,3 +28,4 @@ Folder list:
 24. **queue** package
 25. **multiprocessing** package
 26. **gc** package - garbage collection
+27. **signal** package
