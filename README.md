@@ -30,3 +30,4 @@ Folder list:
 26. **gc** package - garbage collection
 27. **signal** package
 28. **disutils** package
+29. **pyramid** package
