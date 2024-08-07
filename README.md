@@ -31,3 +31,4 @@ Folder list:
 27. **signal** package
 28. **disutils** package
 29. **pyramid** package
+30. **itertools** package
