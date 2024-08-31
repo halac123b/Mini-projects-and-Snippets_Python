@@ -13,4 +13,4 @@ jobs = [gevent.spawn(gevent.socket.gethostbyname, url) for url in urls]
 ## timeout: nếu đợi lâu hơn mà vẫn chạy chưa xong thì trở lại thread chính
 _ = gevent.joinall(jobs, timeout=2)
 # greenlet.value: giá trị return của hàm
-print([job.value for job in jobS])
+print([job.value for job in jobs])

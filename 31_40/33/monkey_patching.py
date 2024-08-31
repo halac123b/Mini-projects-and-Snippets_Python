@@ -5,7 +5,12 @@ import requests
 ## Giúp các hàm k liên quan greenlet vẫn chạy trog greenlet đc
 
 # patch_all(): thao tác đầu tiên để patch các std lib
-gevent.monkey.patch_all()
+## Cần luôn phải đc gọi đầu tiên để đảm bảo độ chính xác
+## select: module để theo dõi các socket, pipe, tác vụ I/O
+## thread: sử dụng thread của greenlet thay vì của OS
+## aggressive: có patch các phần mở rộng k
+## subprocess: module giúp các subprocess tương thích với greenlet
+gevent.monkey.patch_all(select=True, thread=True, aggressive=False, subprocess=True)
 
 urls = ["https://www.google.com/", "https://www.apple.com/", "https://www.python.org/"]
 

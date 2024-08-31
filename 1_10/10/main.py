@@ -1,5 +1,6 @@
 import os
 import signal
+import sys
 
 # Access, modify or add new OS environment variables
 ## Use as a dict
@@ -18,3 +19,8 @@ print(os.getpid())
 
 # Kết thúc 1 process, với tín hiệu SIGQUIT (tạo core dump)
 os.kill(os.getpid(), signal.SIGQUIT)
+
+# Chạy 1 lệnh khác bằng cmd để thay thế cho process hiện tại
+## arg[1]: tên cmd
+## arg[2]: các arg của cmd
+os.execv(sys.argv[0], sys.argv)
