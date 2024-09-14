@@ -38,3 +38,5 @@ Folder list:
 34. **six** package
 35. Image to PDF converter
 36. **mailtrap** package
+37. **oauthlib** package
+38. Small python projects with **Programming with Mosh**
