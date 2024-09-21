@@ -40,3 +40,4 @@ Folder list:
 36. **mailtrap** package
 37. **oauthlib** package
 38. Small python projects with **Programming with Mosh**
+39. Auto scrape and post content to websites
