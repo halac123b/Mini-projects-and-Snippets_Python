@@ -42,3 +42,4 @@ Folder list:
 38. Small python projects with **Programming with Mosh**
 39. Auto scrape and post content to websites
 40. **Audio filter** algorithm
+41. Dota2 result prediction
