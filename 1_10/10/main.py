@@ -14,6 +14,9 @@ print(os.path.dirname("folder/file.txt"))
 # Bool, check xem path đó có tồn tại k
 print(os.path.exists("path1/path2"))
 
+# Bool, check xem path đó có link đến 1 file đã có sẵn không
+print(os.path.isfile("path to file"))
+
 # int, id của process đang chạy
 print(os.getpid())
 
@@ -24,3 +27,6 @@ os.kill(os.getpid(), signal.SIGQUIT)
 ## arg[1]: tên cmd
 ## arg[2]: các arg của cmd
 os.execv(sys.argv[0], sys.argv)
+
+# Rename file hoặc folder
+os.rename("filepath", "filepath" + '.bak')
