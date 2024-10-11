@@ -45,3 +45,4 @@ Folder list:
 41. Dota2 result prediction
 42. **importlib** package
 43. **yaml** package
+44. **cookiecutter** package
