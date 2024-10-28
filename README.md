@@ -46,3 +46,4 @@ Folder list:
 42. **importlib** package
 43. **yaml** package
 44. **cookiecutter** package
+45. **Gemini Google** API
