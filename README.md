@@ -47,3 +47,4 @@ Folder list:
 43. **yaml** package
 44. **cookiecutter** package
 45. **Gemini Google** API
+46. **locale** package
