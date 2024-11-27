@@ -20,6 +20,10 @@ print(os.path.isfile("path to file"))
 # int, id của process đang chạy
 print(os.getpid())
 
+# int, ID của user hiện tại đang chạy chương trình
+## Nếu quyền admin, UID = 0
+print(os.geteuid())
+
 # Kết thúc 1 process, với tín hiệu SIGQUIT (tạo core dump)
 os.kill(os.getpid(), signal.SIGQUIT)
 
@@ -30,3 +34,9 @@ os.execv(sys.argv[0], sys.argv)
 
 # Rename file hoặc folder
 os.rename("filepath", "filepath" + '.bak')
+
+# Set quyền cho file
+## 384 = 0o600: rw-------: owner wr, người khác k đc làm gì cả
+    # Số này là cố định, cần phải thuộc
+# Nếu set quyền mà k có quyền đc set, raise PermissionError exception
+os.chmod("path/to/file", 384)

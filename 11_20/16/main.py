@@ -10,6 +10,10 @@ print(sys.argv)
 # str, path đến file executable của Python đc cài đặt trong máy
 print(sys.executable)
 
+# Các path liên quan đến file đang chạy
+## path[0]: folder chứa file hiện tại đang chạy
+print(sys.path[0])
+
 # Thoát khỏi chương trình đang chạy
 ## sys.exit(1), sys.exit("Exiting the program with a message.") : có thể kèm theo status code hay msg
 sys.exit()
