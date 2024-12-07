@@ -49,3 +49,4 @@ Folder list:
 45. **Gemini Google** API
 46. **locale** package
 47. **socket** package
+48. **weakref** package
