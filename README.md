@@ -50,3 +50,4 @@ Folder list:
 46. **locale** package
 47. **socket** package
 48. **weakref** package
+49. **pickle** package

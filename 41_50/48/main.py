@@ -9,6 +9,8 @@ weak_ref = weakref.ref(obj)
 
 # Print the object and the weak reference
 print(obj)       # Prints the object instance
+# weak_ref: obj weakref
+## weak_ref(): obj mà weakref đang trỏ tới
 print(weak_ref())  # Prints the same object instance
 
 # Delete the original reference
