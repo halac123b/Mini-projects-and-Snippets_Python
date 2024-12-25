@@ -51,3 +51,4 @@ Folder list:
 47. **socket** package
 48. **weakref** package
 49. **pickle** package
+50. **gipc** package
