@@ -52,3 +52,4 @@ Folder list:
 48. **weakref** package
 49. **pickle** package
 50. **gipc** package
+51. **pydub** package
