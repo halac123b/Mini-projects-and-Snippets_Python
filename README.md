@@ -56,3 +56,4 @@ Folder list:
 52. Analys data of Astro
 53. **cryptography** package
 54. **ssl** package
+55. NFT data analysis
