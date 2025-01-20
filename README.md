@@ -57,3 +57,4 @@ Folder list:
 53. **cryptography** package
 54. **ssl** package
 55. NFT data analysis
+56. **typing** package
