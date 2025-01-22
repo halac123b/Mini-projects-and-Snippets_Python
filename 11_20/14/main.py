@@ -7,6 +7,7 @@ setuptools.setup(
     python_requires=">=3",
     install_requires=["package_name"],  # From requirement.txt
     description="Desc for the package",
+    long_description="Long desc for the package",
     author="Duy Ha",
     author_email="halac123game@gmail.com",
     url="URL_website",  # URL đến page của package (homepage, document)
