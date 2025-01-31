@@ -12,5 +12,18 @@ class Database:
     
     def db_create():
         file_path = Database.path()
-        conn = sqlite3.connect(file_path)
-        cursor = conn.cursor()
+        connection = sqlite3.connect(file_path)
+        cursor = connection.cursor()
+        create_table = '''
+                        create table if not exists entry(
+                            id integer primary key,
+                            time_stamp text,
+                            link text,
+                            post_original text,
+                            title text,
+                            post text
+                        )
+                        '''
+        cursor.execute(create_table)
+        connection.commit()
+        connection.close()
