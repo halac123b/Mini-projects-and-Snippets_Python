@@ -59,3 +59,4 @@ Folder list:
 55. NFT data analysis
 56. **typing** package
 57. **sqlite3** package
+58. **swarms** package
