@@ -60,3 +60,4 @@ Folder list:
 56. **typing** package
 57. **sqlite3** package
 58. **swarms** package
+59. **matplotlib** package

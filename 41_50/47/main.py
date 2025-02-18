@@ -26,3 +26,9 @@ listener.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
 # Open socket with max 10 connection in queue
 listener.listen(10)
+
+# Connect đến IP tại port đc chọn
+listener.connect(('1.1.1.1', 53))
+
+# Set timeout cho socket, nếu connect đến socket khác hay gửi data hơn 1s sẽ raise exception
+socket.setdefaulttimeout(1)
