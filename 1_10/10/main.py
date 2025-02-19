@@ -40,3 +40,8 @@ os.rename("filepath", "filepath" + '.bak')
     # Số này là cố định, cần phải thuộc
 # Nếu set quyền mà k có quyền đc set, raise PermissionError exception
 os.chmod("path/to/file", 384)
+
+# set process group: Tạo 1 group process mới cho process hiện tại
+# Biến nó thành 1 process chạy ngầm, k bị ảnh hưởng bởi những thao tác lên process chính (vd: Ctrl+C để stop)
+# Lúc này nếu muốn tắt phải tìm pid và tắt bằng cmd của OS (vẫn có thể dùng os.kill())
+os.setpgrp()
