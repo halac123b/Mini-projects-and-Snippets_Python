@@ -9,7 +9,7 @@ pipe_parent, pipe_child = gipc.pipe(
 )
 
 def myFunc(arg1):
-    pass
+    print(arg1)
 
 # Start process mới và chạy hàm myFunc() bên trog
 process = gipc.start_process(
@@ -19,3 +19,5 @@ process = gipc.start_process(
             }
         )
 
+# Gửi data vào 1 pipe, data này sẽ đi qua hàm encoder, rồi đến phía pipe nhận
+pipe_child.put(1)

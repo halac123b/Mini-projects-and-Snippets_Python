@@ -20,9 +20,14 @@ print(os.path.isfile("path to file"))
 # int, id của process đang chạy
 print(os.getpid())
 
-# int, ID của user hiện tại đang chạy chương trình
+# int, ID của user hiện tại đang chạy chương trình (effective user id)
 ## Nếu quyền admin, UID = 0
+## Đôi khi k phải ID thực tế của user đó, bị ảnh hưởng bởi role hiện có của user
+## vd: user ID = 1000, nhưng role root (sudo), khi đó log geteuid = 0
 print(os.geteuid())
+
+# Effective group ID, cũng giống UserID nhưng là cho group của user đó
+print(os.getegid())
 
 # Kết thúc 1 process, với tín hiệu SIGQUIT (tạo core dump)
 os.kill(os.getpid(), signal.SIGQUIT)

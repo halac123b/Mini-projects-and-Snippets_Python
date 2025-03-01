@@ -4,7 +4,9 @@ import sys
 try:
     # Str, Chạy 1 cmd trong terminal và lấy output
     ## Cmd: strings -4 /etc/issue
-    print(subprocess.check_output(["strings", "-4", "/etc/issue"]))
+    ## stderr: direct vị trí log error nằm trực tiếp trong output của process, chứ k phải nằm trong exception đc raise như default
+    ### Với cách này chỉ cần print output có thể xem đc cả output đúng lẫn error
+    print(subprocess.check_output(["strings", "-4", "/etc/issue"]), stderr=subprocess.STDOUT)
 
     # Chạy 1 lệnh trong terminal
     ## input: list các item trong cmd, trong lệnh chúng cách nhau bằng dấu cách

@@ -1,6 +1,8 @@
 import platform
 import ssl
+import subprocess
 from typing import List
+import modules.globals
 
 # monkey patch ssl for mac
 if platform.system().lower() == "darwin":
@@ -22,3 +24,18 @@ def run_ffmpeg(args: List[str]) -> bool:
     except Exception:
         pass
     return False
+
+def detect_fps(target_path: str) -> float:
+    command = [
+        "ffprobe",
+        "-v",
+        "error",
+        "-select_streams",
+        "v:0",
+        "-show_entries",
+        "stream=r_frame_rate",
+        "-of",
+        "default=noprint_wrappers=1:nokey=1",
+        target_path,
+    ]
+    output = subprocess.check_output(command).decode().strip().split("/")
