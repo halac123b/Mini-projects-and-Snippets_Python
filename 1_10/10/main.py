@@ -50,3 +50,10 @@ os.chmod("path/to/file", 384)
 # Biến nó thành 1 process chạy ngầm, k bị ảnh hưởng bởi những thao tác lên process chính (vd: Ctrl+C để stop)
 # Lúc này nếu muốn tắt phải tìm pid và tắt bằng cmd của OS (vẫn có thể dùng os.kill())
 os.setpgrp()
+
+# Set user vào group có các ID input
+## groups: int[]
+os.setgroups(groups)
+# Set user ID và group ID cho process hiện tại
+os.setgid(gid)
+os.setuid(uid)

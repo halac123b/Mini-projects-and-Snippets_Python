@@ -63,3 +63,4 @@ Folder list:
 59. **matplotlib** package
 60. **setproctitle** package
 61. **grp**, **pwd** package
+62. Auto import Github Repo
