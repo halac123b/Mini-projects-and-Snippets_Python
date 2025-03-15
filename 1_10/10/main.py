@@ -57,3 +57,6 @@ os.setgroups(groups)
 # Set user ID và group ID cho process hiện tại
 os.setgid(gid)
 os.setuid(uid)
+
+# Tạo 1 biến ngẫu nhiên 32 bytes
+byteObj = os.urandom(32)

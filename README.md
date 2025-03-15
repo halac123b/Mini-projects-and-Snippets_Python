@@ -64,3 +64,5 @@ Folder list:
 60. **setproctitle** package
 61. **grp**, **pwd** package
 62. Auto import Github Repo
+63. **syslog** package
+64. **base64** package
