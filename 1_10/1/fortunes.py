@@ -1,5 +1,4 @@
 def getFortunes():
-    return [
-        "Test1",
-        "Test2"
-    ]
+    with open("input.txt", "r") as file:
+        lines = file.read().splitlines()  # Removes newline characters
+    return lines
