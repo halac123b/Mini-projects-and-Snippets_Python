@@ -22,4 +22,6 @@ process = gipc.start_process(
 # Gửi data vào 1 pipe, data này sẽ đi qua hàm encoder, rồi đến phía pipe nhận
 pipe_child.put(1)
 # Get data đc gửi từ pipe_child, theo thứ tự FIFO, nào đến trc thì lấy trc
+## Nếu k set timeout, pipe sẽ chờ hoài đến khi có data
 pipe_parent.get()
+pipe_parent.get(1)  # Chỉ chờ tối đa 1s
