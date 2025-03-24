@@ -12,7 +12,7 @@ variable. To enable threading resolver:
 import gevent
 
 N = 1000
-# limit ourselves to max 10 simultaneous outstanding requests
+# greenlet pool with a maximum of 10 concurrent greenlets
 pool = gevent.pool.Pool(10)
 finished = 0
 
@@ -27,9 +27,13 @@ def job(url):
     finally:
         finished += 1
 
+# Giới hạn thời gian chạy của greenlet bên trong tối đa 2s
+## False: khi timeout k raise exception
 with gevent.Timeout(2, False):
     for x in range(10, 10 + N):
+        # Spawn 1 new greenlet
         pool.spawn(job, '%s.com' % x)
+    # Chờ đến khi tất cả các greenlet trong pool kết thúc
     pool.join()
 
 print('finished within 2 seconds: %s/%s' % (finished, N))
