@@ -17,6 +17,12 @@ print(os.path.exists("path1/path2"))
 # Bool, check xem path đó có link đến 1 file đã có sẵn không
 print(os.path.isfile("path to file"))
 
+# Chỉ get file name từ path -> file.txt
+print(os.path.basename("folder/file.txt"))
+
+# Tạo tuple gồm file name và extension -> (file, .txt)
+print(os.path.splitext("file.txt"))
+
 # int, id của process đang chạy
 print(os.getpid())
 
