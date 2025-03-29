@@ -69,3 +69,4 @@ Folder list:
 65. **traceback** package
 66. **Gemini** API
 67. **llama-stack** package
+68. **duckdb** package
